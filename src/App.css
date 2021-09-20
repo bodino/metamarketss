@@ -1,38 +1,951 @@
 .App {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.AppHeaderBar{
+ position: relative;
+
+height: 83px;
+left: 0px;
+top: 0px; 
+
+background: #FFFFFF;
+box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25);
+}
+
+.AppLogo{
+position: relative;
+left: -305px;
+
+top: 40px;
+bottom: 40.36%;
+}
+
+.AppHeaderFont {
+  margin: 0;
+  position: absolute;
+  
+  
+  top: 14px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: none;
+  /* identical to box height */
+  
   text-align: center;
+  
+  color: #222222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Loginbutton {
+
+position: relative;
+width: 135px;
+height: 69px;
+left: 310px;
+top: 40px;
+background: #FFAD33;
+border-radius: 17px;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+.Acount {
+
+
+position: relative;
+size: auto;
+width: 804px;
+height: 129px;
+top: 100px;
+left: 0;
+right: 0;
+top: ;
+background: #FFAD33;
+border-radius: 17px;
+
+display: flex;
+align-items: center;
+text-align: center;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+color: #000000;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lefttext {
+position: absolute;
+left: 16.42%;
+right: 65.17%;
+top: 18.6%;
+bottom: 64.34%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;}
+
+.MarketBoxText {
+  font-family: Montserrat;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  
+  text-align: left;
+  
+
+}
+.righttext {
+  position: absolute;
+left: 66.29%;
+right: 16.92%;
+top: 18.6%;
+bottom: 64.34%;
+width: 185px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.seperatingline {
+position: absolute;
+left: 47.280%;
+right: 47.28%;
+top: 50.68%;
+bottom: 71.32%;
+
+border: 0.7px solid #FFFFFF;
+transform: rotate(90deg);
 }
 
-.App-link {
-  color: #61dafb;
+.Usdcbalance {
+ position: relative;
+ top: 40px;
+ right: 90px;
+
+align-items: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+
+color: #000000;
+
+}
+.modal {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards {
+position: flex;
+display: grid;
+grid-template-columns: repeat(3,0.1fr);
+gap: 1rem;
+align: center;
+
 }
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-img{
+   object-fit: cover;
+   width: 100% !important;
+   height: 100px !important;
+   font-size: 24px;
+   object-fit: cover;
+}
+
+.container123 {
+position: relative;
+top: 150px;
+
+
+}
+
+a:hover {
+  color: black !important;
+}
+
+.BuySell{
+  position: absolute;
+width: 1440px;
+height: 83px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25);
+}
+.marketscreentitle{
+ position: relative;
+width: 703px;
+height: 89px;
+left: 100px;
+top: 114px;
+
+}
+
+.marketscreentexttitle{
+position: absolute;
+left: 2.7%;
+right: 2.28%;
+top: 19.1%;
+bottom: 12.36%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.marketscreenbox{
+  position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(255, 173, 51, 1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 17px;
+}
+
+.backbuttonmaster{
+position: relative;
+width: 86px;
+height: 86px;
+right: ;
+top: 30px;
+
+}
+.backbuttoncircle{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(255, 173, 51, 0.9);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.backbuttonarrow{
+  position: absolute;
+left: 74.42%;
+right: -22.09%;
+top: 51.16%;
+bottom: 48.84%;
+
+border: 4px solid #000000;
+box-sizing: border-box;
+transform: rotate(180deg);
+}
+
+.leftinfobox{
+  position: relative;
+width: 359px;
+height: 166px;
+right: ;
+top: 63px;
+}
+
+.leftrectangle{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F2F2F2;
+border: 1px solid #C6C6C6;
+box-sizing: border-box;
+border-radius: 17px;
+}
+
+
+
+.liquidityheader{
+  position: absolute;
+left: 6.41%;
+right: 78.83%;
+top: 24.7%;
+bottom: 65.66%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+.liquiditytext{
+  position: relative;
+left: ;
+right: ;
+top:25px ;
+bottom: ;
+
+align-items: center;
+text-align: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.totalvolumeheader{
+  position: absolute;
+left: 36.49%;
+right: 39.55%;
+top: 24.7%;
+bottom: 65.66%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+.totalvolumetext{
+  position: absolute;
+left: 44.29%;
+right: 44.57%;
+top: 50%;
+bottom: 40.36%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.closingdateheader{
+  position: absolute;
+left: 73.82%;
+right: 4.18%;
+top: 24.7%;
+bottom: 65.66%;
+
+font-family: Montserrat;
+
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+.closingdatetext{
+   position: relative;
+left: ;
+right: ;
+top:18px ;
+bottom: ;
+
+align-items: center;
+text-align: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.yestext{
+
+position: absolute;
+width: 130px;
+height: 30px;
+left: 0px;
+top: 70px;
+
+background: #FFAD33;
+border-radius: 2px;
+
+
+font-family: Montserrat;
+font-weight: bold;
+font-size: 14px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+}
+
+.screenseperator1 {
+  position: relative;
+
+
+width:50px;
+left: 80px;
+top: 90px;
+border: 1px solid #C6C6C6;
+transform: rotate(90deg);
+}
+
+.screenseperator2 {
+  position: relative;
+
+
+width:50px;
+left: 215px;
+top: 90px;
+border: 1px solid #C6C6C6;
+transform: rotate(90deg);
+}
+
+.rightinfobox{
+ position: relative;
+width: 359px;
+height: 80px;
+left: 445px;
+top: -60px;
+
+background: #F2F2F2;
+border: 1px solid #C6C6C6;
+box-sizing: border-box;
+border-radius: 17px;
+}
+
+.buysellbox{
+position: relative;
+width: 803px;
+height: 399px;
+left: ;
+top: 19px;
+
+background: #F2F2F2;
+border: 1px solid #C6C6C6;
+box-sizing: border-box;
+border-radius: 17px;
+}
+
+.marketboxseperatingline{
+position: relative;
+width: 803px;
+height: 0px;
+right: 0;
+top: 56px;
+
+border: 1px solid #C6C6C6;
+transform: rotate(180deg);
+}
+
+.marketboxseperatingline2{
+position: relative;
+width: 803px;
+height: 0px;
+right: 0;
+top: 190px;
+
+border: 1px solid #C6C6C6;
+transform: rotate(180deg);
+}
+
+.firstcircle{
+position: relative;
+width: 228px;
+height: 32px;
+left: 64px;
+top: 229px;
+
+border: 1px solid #C6C6C6;
+box-sizing: border-box;
+border-radius: 17px;
+}
+
+.secondcircle{
+position: relative;
+width: 228px;
+height: 32px;
+left: 64px;
+top: 242px;
+
+border: 1px solid #C6C6C6;
+box-sizing: border-box;
+border-radius: 17px;
+}
+
+.thirdcircle{
+position: absolute;
+width: 228px;
+height: 78px;
+left: 320px;
+top: 233px;
+
+border: 1px solid #C6C6C6;
+box-sizing: border-box;
+border-radius: 17px;
+}
+
+.executetradebox{
+  position: relative;
+width: 177px;
+height: 50px;
+left: 611px;
+top: 267px;
+
+background: rgba(255, 173, 51, 0.9);
+border-radius: 17px;
+border: 0.5px solid #C6C6C6;
+}
+
+.executetradeboxtext{
+ position:relative;
+top: 4px;
+width:168px;
+left: 5px;
+height:42px;
+font-family: Montserrat;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+align-items: center;
+text-align: center;
+
+
+color: #000000;
+
+}
+
+.yesnoseperator{
+ position: relative;
+width: 268px;
+height: 0px;
+left: 279px;
+top: 5px;
+
+border: 1px solid #C6C6C6;
+transform: rotate(180deg);
+}
+
+.outcometext{
+  position: relative;
+width: 57px;
+height: 16px;
+left: 66px;
+top: -92px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+
+.outcometext{
+  position: relative;
+width: 57px;
+height: 16px;
+left: 66px;
+top: -92px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+
+.outcometext{
+  position: relative;
+width: 57px;
+height: 16px;
+left: 66px;
+top: -92px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.pricetext{
+  position: relative;
+width: 57px;
+height: 16px;
+left: 498px;
+top: -124px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.mysharestext{
+  position: relative;
+width: 80px;
+height: 16px;
+left: 697px;
+top: -156px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.yesnospacing{
+position: relative;
+left: 66px;
+top: -117px;
+
+font-family: Montserrat;
+
+}
+
+
+.yesprice{
+   position: relative;
+left: 5px;
+right: ;
+top:60px ;
+bottom: ;
+
+align-items: center;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.noprice{
+   position: relative;
+left: 5px;
+right: ;
+top:52px ;
+bottom: ;
+
+align-items: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.mysharesyes{
+   position: relative;
+left: ;
+right: ;
+top:18px ;
+bottom: ;
+
+align-items: center;
+text-align: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.mysharesno{
+   position: relative;
+left: ;
+right: ;
+top:18px ;
+bottom: ;
+
+align-items: center;
+text-align: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.YourUSDC{
+position: relative;
+width: 100px;
+height: 16px;
+left: 10px;
+top: 7.5px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+}
+
+.YourUSDCseperator{
+position: relative;
+width: 32px;
+height: 0px;
+left: 88px;
+top: -18px;
+
+border: 1px solid #C6C6C6;
+transform: rotate(-90deg);
+}
+
+
+.Max{
+position: relative;
+width: 100px;
+height: 16px;
+left: 40px;
+top: 7px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #1652f0;
+text-decoration: underline;
+cursor: pointer;
+
+}
+
+.Maxseperator{
+
+  position: relative;
+width: 32px;
+height: 0px;
+left: 88px;
+top: -18px;
+
+border: 1px solid #C6C6C6;
+transform: rotate(-90deg);
+
+}
+
+.form{
+  position: relative;
+    top:-51px;
+  left:104px;
+  height:32px;
+  background: #F2F2F2;
+  border-top-right-radius: 17px; 
+  border-bottom-right-radius:17px; 
+  
+  border: 0.1px solid #C6C6C6;
+  width:125px;
+    padding: .8rem  ;
+
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+}
+
+.USDCbalance{
+ position: relative;
+    top:-42px;
+  left:117px;
+  height:32px;
+  width:125px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+
+}
+
+.Buybutton{
+position: relative;
+width: 100px;
+height: 55px;
+left: 60px;
+top: 12px;
+background: #C6C6C6;
+border-radius: 17px;
+text-align: center;
+display: flex;
+
+border: 0.5px solid #FFAD33;
+cursor: pointer;
+
+
+}
+
+.Sellbutton{
+position: relative;
+width: 100px;
+height: 55px;
+left: 195px;
+top: -43px;
+background: #C6C6C6;
+border-radius: 17px;
+text-align: center;
+border: 0.5px solid #FFAD33;
+cursor: pointer;
+
+
+
+
+
+display: flex;
+}
+.buttontext{
+position: relative;
+left:37px ;
+right: ;
+top: 20px;
+bottom: ;
+
+align-items: center;
+text-align: center;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+
+
+
+}
+
+a:link { text-decoration: none; };
+
+
+a:visited { text-decoration: none; };
+
+
+a:hover { text-decoration: none; };
+
+
+a:active { text-decoration: none; };
